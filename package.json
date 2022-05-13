@@ -1,0 +1,27 @@
+{
+  "name": "hunt",
+  "version": "1.0.0",
+  "description": "Scavenger hunt ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaytonMcIntosh/scavenger-hunt.git"
+  },
+  "author": "Clayton McIntosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ClaytonMcIntosh/scavenger-hunt/issues"
+  },
+  "homepage": "https://github.com/ClaytonMcIntosh/scavenger-hunt#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "D": "^1.0.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.3"
+  }
+}
