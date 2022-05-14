@@ -54,7 +54,7 @@ const loginUser = asyncHandler(async (req, res) => {
 
     //check for user email
     const user = await User.findOne({ email })
-
+ 
     if (user && (await bcrypt.compare(password, user.password))) {
         res.json({
             _id: user.id,
@@ -70,7 +70,7 @@ const loginUser = asyncHandler(async (req, res) => {
 
 // @desc Get user data
 // @route GET /api/users/me
-// @access Public
+// @access Private
 const getMe = asyncHandler(async (req, res) => {
     res.json({ message: 'User data display' })
 })
