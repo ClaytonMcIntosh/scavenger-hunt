@@ -40,7 +40,6 @@ function Header() {
                         </li>
                     </>
                 )}
-
             </ul>
         </header>
     )
