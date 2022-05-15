@@ -92,6 +92,19 @@ h3 {
   gap: 10px;
 }
 
+.square-container {
+  background-color: #777;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.square {
+  background-color: aqua;
+  margin: 1%;
+  width: 30%;
+}
+
 .goal {
   background-color: #f4f4f4;
   margin: 10px 0;
