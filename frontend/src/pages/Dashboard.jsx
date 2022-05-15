@@ -7,6 +7,7 @@ import Spinner from '../components/Spinner'
 import { getGoals, reset } from '../features/goals/goalSlice'
 import HuntBox from '../components/HuntBox'
 
+
 function Dashboard() {
     const navigate = useNavigate()
     const dispatch = useDispatch()

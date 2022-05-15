@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Card = () => {
+const Card = (img, name, key) => {
     return (
-        <div className="square">1</div>
+        <div className="square">
+            <img src={img} alt="" width="100%" />
+            <p>{key}</p>
+            <p>{name}</p>
+
+
+        </div>
     )
 }
 

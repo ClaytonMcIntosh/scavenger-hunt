@@ -1,19 +1,13 @@
 import Card from './Card'
 
-
-const HuntBox = () => {
+const HuntBox = (props) => {
     return (
         <div className="square-container">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-
+            {props.data.map((element) => {
+                return (
+                    <Card key={element.id} name={element.name} img={element.img} />
+                );
+            })}
         </div>
     )
 }
