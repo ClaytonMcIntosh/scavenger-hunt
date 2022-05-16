@@ -53,6 +53,60 @@ const data = [
         heading: 'stapler',
         headerName: 'Household Items'
     },
+    {
+        id: 10,
+        img: require("../assets/img/park/bark.jpg"),
+        heading: 'bark',
+        headerName: 'Park'
+    },
+    {
+        id: 11,
+        img: require("../assets/img/park/bottle-cap.jpg"),
+        heading: 'bottle cap',
+        headerName: 'Park'
+    },
+    {
+        id: 12,
+        img: require("../assets/img/park/brown-leaf.jpg"),
+        heading: 'leaf',
+        headerName: 'Park'
+    },
+    {
+        id: 13,
+        img: require("../assets/img/park/clover.jpg"),
+        heading: 'clover',
+        headerName: 'Park'
+    },
+    {
+        id: 14,
+        img: require("../assets/img/park/flower.jpg"),
+        heading: 'flower',
+        headerName: 'Park'
+    },
+    {
+        id: 15,
+        img: require("../assets/img/park/grass.jpg"),
+        heading: 'grass',
+        headerName: 'Park'
+    },
+    {
+        id: 16,
+        img: require("../assets/img/park/pebble.jpg"),
+        heading: 'stone',
+        headerName: 'Park'
+    },
+    {
+        id: 17,
+        img: require("../assets/img/park/seed-nut-cone.jpg"),
+        heading: 'seed, nut or cone',
+        headerName: 'Park'
+    },
+    {
+        id: 18,
+        img: require("../assets/img/park/twig.jpg"),
+        heading: 'twig',
+        headerName: 'Park'
+    },
 ]
 
 export default data;

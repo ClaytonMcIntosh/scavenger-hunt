@@ -20,6 +20,13 @@ function Header() {
                 <Link to='/'>Scavenger Hunt</Link>
             </div>
             <ul>
+                <li>
+                    <Link to='/hunt'>
+                        <button className='btn'>
+                            Hunt!
+                        </button>
+                    </Link>
+                </li>
                 {user ? (
                     <li>
                         <button className='btn' onClick={onLogout}>
