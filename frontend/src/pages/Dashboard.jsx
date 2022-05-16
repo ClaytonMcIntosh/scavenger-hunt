@@ -5,7 +5,6 @@ import GoalForm from '../components/GoalForm'
 import GoalItem from '../components/GoalItem'
 import Spinner from '../components/Spinner'
 import { getGoals, reset } from '../features/goals/goalSlice'
-import HuntBox from '../components/HuntBox'
 
 
 function Dashboard() {
@@ -43,8 +42,6 @@ function Dashboard() {
                 <h1>Welcome {user && user.name}</h1>
                 <p>Goals Dashboard</p>
             </section>
-
-            <HuntBox />
 
             <GoalForm />
 

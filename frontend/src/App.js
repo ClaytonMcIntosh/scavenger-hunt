@@ -6,6 +6,7 @@ import Main from './pages/Main'
 import Dashboard from './pages/Dashboard'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Hunt from './pages/Hunt'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path='/' element={<Dashboard />} />
             <Route path='/main' element={<Main />} />
             <Route path='/login' element={<Login />} />
+            <Route path='/hunt' element={<Hunt />} />
             <Route path='/register' element={<Register />} />
           </Routes>
         </div>
