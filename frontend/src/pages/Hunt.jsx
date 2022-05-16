@@ -13,7 +13,6 @@ const Hunt = ({ huntName }) => {
 
     return (
         <div>
-            <h1>Hunt</h1>
             {uniqueCategories.map((catName, index) => {
                 return (
                     <HuntBox key={index} headerName={catName} data={data.filter((img) => img.headerName === catName)} />
