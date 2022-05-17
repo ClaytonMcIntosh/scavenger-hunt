@@ -11,6 +11,13 @@ body {
   height: 100vh;
 }
 
+.found-check {
+  background-color: yellow;
+  padding: 5px;
+  margin: auto;
+  width: 50px;
+  }
+
 a {
   text-decoration: none;
   color: #000;
@@ -103,6 +110,10 @@ h3 {
   background-color: aqua;
   margin: 1%;
   width: 30%;
+}
+
+.found-box {
+  background-color: rgb(121, 209, 121);
 }
 
 .goal {

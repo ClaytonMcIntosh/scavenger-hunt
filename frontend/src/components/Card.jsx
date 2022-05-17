@@ -6,7 +6,12 @@ const Card = ({ img, heading }) => {
             <img className="card-image" src={img} alt="" width="100%" />
             <h3>{heading} </h3>
 
-            <br />
+            <div className='found-box'>
+                <div className='found-text'> found
+                </div>
+                <div className='found-check'> x
+                </div>
+            </div>
         </div >
     )
 }
