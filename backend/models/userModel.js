@@ -17,7 +17,7 @@ const userSchema = mongoose.Schema({
     // hunts
 })
 {
-    timestams: true
+    timestamps: true
 }
 
 let User = mongoose.model('User', userSchema)

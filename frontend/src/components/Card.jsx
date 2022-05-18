@@ -1,21 +1,14 @@
-import { useState } from 'react'
-
 const Card = ({ img, heading, found }) => {
 
-    const [message, setMessage] = useState('');
 
-    const handleChange = event => {
-        setMessage(event.target.value);
-    };
 
     const handleClick = event => {
         event.preventDefault();
 
-        // 👇️ value of input field
-        console.log('old value: ', message);
+        console.log(found)
+        found = true;
+        console.log(found)
 
-        // 👇️ set value of input field
-        setMessage('New value');
     };
 
 
@@ -35,15 +28,6 @@ const Card = ({ img, heading, found }) => {
 
 
                     <div>
-                        <input
-                            type="text"
-                            id="message"
-                            name="message"
-                            onChange={handleChange}
-                            value={message}
-                        />
-
-                        <h2>Message: {message}</h2>
 
                         <button onClick={handleClick}>Click</button>
                     </div>
@@ -57,5 +41,6 @@ const Card = ({ img, heading, found }) => {
 }
 
 export default Card
+
 
 

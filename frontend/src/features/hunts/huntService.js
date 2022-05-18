@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = '/api/hunts'
+const API_URL = '/api/hunts/'
 
 // Create new hunt
 const createHunt = async (huntData, token) => {

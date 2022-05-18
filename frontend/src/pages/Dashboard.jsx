@@ -6,7 +6,8 @@ import GoalItem from '../components/GoalItem'
 import Spinner from '../components/Spinner'
 import { getGoals, reset } from '../features/goals/goalSlice'
 import { getHunts } from '../features/hunts/huntSlice'
-
+import TestClick from '../components/TestClick'
+import HuntItem from '../components/HuntItem'
 
 function Dashboard() {
     const navigate = useNavigate()
@@ -17,13 +18,13 @@ function Dashboard() {
         (state) => state.goals
     )
 
-    // const { hunts, isLoading: isLoadingHunts, isError: isErrorHunts, message: messageHunts } = useSelector(
-    //     (state) => state.hunts
-    // )
+    const { hunts, isLoading: isLoadingHunts, isError: isErrorHunts, message: messageHunts } = useSelector(
+        (state) => state.hunts
+    )
 
     useEffect(() => {
-        if (isError) {
-            console.log(message)
+        if (isError || isErrorHunts) {
+            console.log(message, messageHunts)
         }
 
         if (!user) {
@@ -36,9 +37,9 @@ function Dashboard() {
         return () => {
             dispatch(reset())
         }
-    }, [user, navigate, isError, message, dispatch])
+    }, [user, navigate, isError, message, dispatch, messageHunts, isErrorHunts])
 
-    if (isLoading) {
+    if (isLoading || isLoadingHunts) {
         return <Spinner />
     }
     return (
@@ -58,14 +59,29 @@ function Dashboard() {
                         ))}
                     </div>
                 ) : (
+                    <h3>You have no saved Goals</h3>
+                )}
+            </section>
+
+            <TestClick />
+
+            <section className='content'>
+                {hunts.length > 0 ? (
+                    <div className='goals'>
+                        {hunts.map((hunt) => (
+                            <HuntItem key={hunt._id} hunt={hunt} />
+                        ))}
+                    </div>
+                ) : (
                     <h3>You have no saved Hunts</h3>
                 )}
             </section>
 
+
             {/* <br></br>
             <p> Below is data from the Hunts database. Ignore</p>
             <p>==={hunts.length && hunts[0].text}===</p> */}
-            
+
         </>
     )
 }
