@@ -7,7 +7,7 @@ const Card = ({ img, heading }) => {
             <h3>{heading} </h3>
 
             <div className='found-box'>
-                <div className='found-text'> found
+                <div className='found-text'> not yet found
                 </div>
                 <div className='found-check'> x
                 </div>

@@ -5,6 +5,7 @@ import GoalForm from '../components/GoalForm'
 import GoalItem from '../components/GoalItem'
 import Spinner from '../components/Spinner'
 import { getGoals, reset } from '../features/goals/goalSlice'
+import { getHunts } from '../features/hunts/huntSlice'
 
 
 function Dashboard() {
@@ -16,6 +17,13 @@ function Dashboard() {
         (state) => state.goals
     )
 
+
+    const { hunts, isLoading: isLoadingHunts, isError: isErrorHunts, message: messageHunts } = useSelector(
+        (state) => state.hunts
+    )
+
+
+
     useEffect(() => {
         if (isError) {
             console.log(message)
@@ -26,6 +34,7 @@ function Dashboard() {
         }
 
         dispatch(getGoals())
+        dispatch(getHunts())
 
         return () => {
             dispatch(reset())
@@ -35,12 +44,15 @@ function Dashboard() {
     if (isLoading) {
         return <Spinner />
     }
-
+    console.log(hunts)
     return (
         <>
             <section className='heading'>
                 <h1>Welcome {user && user.name}</h1>
                 <p>Goals Dashboard</p>
+                
+
+
             </section>
 
             <GoalForm />
@@ -56,6 +68,12 @@ function Dashboard() {
                     <h3>You have no saved Hunts</h3>
                 )}
             </section>
+
+            <br></br>
+            <p> Below is data from the Hunts database. Ignore</p>
+            <p>==={hunts.length && hunts[0].text}===</p>
+            
+
         </>
     )
 }

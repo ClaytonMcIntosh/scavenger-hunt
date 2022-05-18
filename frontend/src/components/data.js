@@ -3,7 +3,8 @@ const data = [
         id: 1,
         img: require("../assets/img/household/clock.jpg"),
         heading: 'clock',
-        headerName: 'Household Items'
+        headerName: 'Household Items',
+        found: false
     },
     {
         id: 2,

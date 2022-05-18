@@ -1,7 +1,7 @@
 import HuntBox from "../components/HuntBox";
 import data from "../components/data";
 
-const Hunt = () => {
+const Household = ({ huntName }) => {
 
     let categories = []
 
@@ -24,4 +24,4 @@ const Hunt = () => {
 }
 
 
-export default Hunt;
+export default Household;

@@ -14,9 +14,12 @@ const userSchema = mongoose.Schema({
         type: String,
         require: [true, 'Please add a password']
     },
+    // hunts
 })
 {
     timestams: true
 }
 
-module.exports = mongoose.model('User', userSchema)
+let User = mongoose.model('User', userSchema)
+
+module.exports = User

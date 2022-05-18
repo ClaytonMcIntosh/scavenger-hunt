@@ -1,7 +1,7 @@
-import HuntBox from "../components/HuntBox";
-import data from "../components/data";
+import HuntBox from "../../components/HuntBox";
+import data from "../../components/data";
 
-const Hunt = () => {
+const Park = () => {
 
     let categories = []
 
@@ -24,4 +24,4 @@ const Hunt = () => {
 }
 
 
-export default Hunt;
+export default Park;
