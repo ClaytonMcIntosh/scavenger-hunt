@@ -17,3 +17,5 @@ const HuntBox = (props) => {
 }
 
 export default HuntBox
+
+
