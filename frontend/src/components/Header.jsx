@@ -1,7 +1,9 @@
-import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { logout, reset } from '../features/auth/authSlice'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+
 
 function Header() {
     const navigate = useNavigate()
@@ -17,37 +19,10 @@ function Header() {
     return (
         <header className='header'>
             <div className='logo'>
-                <Link to='/'>Scavenger Hunt</Link>
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+                <Link to='/'> Scavenger Hunt</Link>
             </div>
-            <ul>
-                <li>
-                    <Link to='/hunt'>
-                        <button className='btn'>
-                            Hunt!
-                        </button>
-                    </Link>
-                </li>
-                {user ? (
-                    <li>
-                        <button className='btn' onClick={onLogout}>
-                            <FaSignOutAlt /> Logout
-                        </button>
-                    </li>
-                ) : (
-                    <>
-                        <li>
-                            <Link to='/login'>
-                                <FaSignInAlt /> Login
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to='/register'>
-                                <FaUser /> Register
-                            </Link>
-                        </li>
-                    </>
-                )}
-            </ul>
+
         </header>
     )
 }

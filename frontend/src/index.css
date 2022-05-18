@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 * {
   margin: 0;
@@ -6,8 +6,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --Outline: #4d148e;
+  --Inline: #4db2ce;
+  --Topline: #c41910;
+  --Backline: #fff;
+
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Fredoka One', 'Gill Sans', sans-serif;
   height: 100vh;
 }
 
@@ -16,7 +24,7 @@ body {
   padding: 5px;
   margin: auto;
   width: 50px;
-  }
+}
 
 a {
   text-decoration: none;
