@@ -4,7 +4,7 @@ import Card from './Card'
 const HuntBox = (props) => {
     return (
         <>
-            <h1> {props.headerName} </h1>
+            <h1>What to find:</h1>
             <div className="square-container">
                 {props.data.map((element) => {
                     return (

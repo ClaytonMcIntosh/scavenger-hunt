@@ -10,7 +10,7 @@ const Card = ({ img, heading, found, icon }) => {
     }
 
     return (
-        <div className='square'>
+        <div className='square' onClick={foundItem}>
             <div className='icon-box'>
                 <div className='icon'>{icon}</div>
             </div>
@@ -29,8 +29,6 @@ const Card = ({ img, heading, found, icon }) => {
                     </div>
                 )
                 }
-
-                <button onClick={foundItem}> Found </button>
             </div>
         </div >
 
