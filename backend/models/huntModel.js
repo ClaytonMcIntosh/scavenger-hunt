@@ -11,7 +11,7 @@ const huntSchema = mongoose.Schema(
             type: String,
             required: [true, 'Please add a text value']
         },
-        // goals
+  
     }, {
     timestamps: true
 })

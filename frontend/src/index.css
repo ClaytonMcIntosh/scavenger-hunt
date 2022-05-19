@@ -253,6 +253,11 @@ h3 {
   color: #000;
 }
 
+.btn-block-short {
+  width: 100%;
+  margin-top: 20px;
+}
+
 .btn-block {
   width: 100%;
   margin-top: 20px;

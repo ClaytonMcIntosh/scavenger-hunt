@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { createGoal } from '../features/goals/goalSlice'
+import { createHunt } from '../features/hunts/huntSlice'
 
-function GoalForm() {
+function SaveHunt() {
     const [text, setText] = useState('')
 
     const dispatch = useDispatch()
@@ -10,7 +10,7 @@ function GoalForm() {
     const onSubmit = (e) => {
         e.preventDefault()
 
-        dispatch(createGoal({ text }))
+        dispatch(createHunt({ text }))
         setText('')
     }
 
@@ -18,7 +18,7 @@ function GoalForm() {
         <section className='form'>
             <form onSubmit={onSubmit}>
                 <div className='form-group'>
-                    <label htmlFor='text'>Notes:</label>
+                    <label htmlFor='text'>Test:</label>
                     <input
                         type='text'
                         name='text'
@@ -28,7 +28,7 @@ function GoalForm() {
                     />
                 </div>
                 <div className='form-group'>
-                    <button className='btn btn-block' type='submit'>
+                    <button className='btn btn-block-short' type='submit'>
                         Add Data
                     </button>
                 </div>
@@ -37,4 +37,4 @@ function GoalForm() {
     )
 }
 
-export default GoalForm
+export default SaveHunt
