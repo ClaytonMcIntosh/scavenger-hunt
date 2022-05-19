@@ -15,7 +15,7 @@ function Footer() {
     }
 
     return (
-        <header className='header'>
+        <header className='footer'>
             <ul>
                 <li>
                 </li>
@@ -27,16 +27,18 @@ function Footer() {
                     </li>
                 ) : (
                     <>
-                        <li>
-                            <Link to='/login'>
-                                <FaSignInAlt /> Login
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to='/register'>
-                                <FaUser /> Register
-                            </Link>
-                        </li>
+                        <div className='footer-container'>
+                            <li>
+                                <Link to='/login'>
+                                    <FaSignInAlt /> Login
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to='/register'>
+                                    <FaUser /> Register
+                                </Link>
+                            </li>
+                        </div>
                     </>
                 )}
             </ul>

@@ -64,16 +64,16 @@ function Register() {
 
     return (
         <>
-            <section className='heading'>
-                <h1>
+            <section className='heading-login'>
+                <h2>
                     <FaUser /> Register
-                </h1>
-                <p>Please create an account</p>
+                </h2>
             </section>
 
             <section className='form'>
                 <form onSubmit={onSubmit}>
                     <div className='form-group'>
+                        <label> Name: </label>
                         <input
                             type='text'
                             className='form-control'
@@ -85,6 +85,7 @@ function Register() {
                         />
                     </div>
                     <div className='form-group'>
+                        <label> Email: </label>
                         <input
                             type='email'
                             className='form-control'
@@ -96,6 +97,7 @@ function Register() {
                         />
                     </div>
                     <div className='form-group'>
+                        <label> Password: </label>
                         <input
                             type='password'
                             className='form-control'

@@ -57,16 +57,16 @@ function Login() {
 
   return (
     <>
-      <section className='heading'>
-        <h1>
+      <section className='heading-login'>
+        <h2>
           <FaSignInAlt /> Login
-        </h1>
-        <p>Login and start setting goals</p>
+        </h2>
       </section>
 
       <section className='form'>
         <form onSubmit={onSubmit}>
           <div className='form-group'>
+            <label> Email: </label>
             <input
               type='email'
               className='form-control'
@@ -78,6 +78,7 @@ function Login() {
             />
           </div>
           <div className='form-group'>
+          <label> Password: </label>
             <input
               type='password'
               className='form-control'

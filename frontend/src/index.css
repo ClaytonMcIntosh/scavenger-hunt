@@ -11,7 +11,6 @@
   --Inline: #4db2ce;
   --Topline: #c41910;
   --Backline: #fff;
-
 }
 
 body {
@@ -19,16 +18,9 @@ body {
   height: 100vh;
 }
 
-.found-check {
-  background-color: yellow;
-  padding: 5px;
-  margin: auto;
-  width: 50px;
-}
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 p {
@@ -41,6 +33,7 @@ ul {
 
 li {
   line-height: 2.2;
+
 }
 
 h1 {
@@ -56,6 +49,7 @@ header-logo {
 h2 {
   color: var(--Outline);
   padding: 10px;
+  font-size: 1.6rem;
 }
 
 h3 {
@@ -66,13 +60,12 @@ h3 {
 .container {
   width: 90%;
   max-width: 960px;
-  margin: 0 auto;
   padding: 0 10px;
   text-align: center;
   border: var(--Outline) solid 5px;
   border-radius: 20px;
-  ;
   margin: 5%;
+  margin-bottom: 100px;
 }
 
 .header {
@@ -119,9 +112,22 @@ h3 {
   padding: 0 20px;
 }
 
-.heading p {
-  color: #828282;
+.heading-login {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 20px;
 }
+
+.footer {
+  margin-bottom: 20px;
+}
+
+.footer-coninter {
+  display: flexbox;
+  flex-wrap: wrap;
+}
+
+
 
 .goals {
   display: grid;
@@ -225,9 +231,8 @@ h3 {
 
 .btn {
   padding: 10px 20px;
-  border: 1px solid #000;
   border-radius: 5px;
-  background: #000;
+  background: var(--Outline);
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -250,7 +255,8 @@ h3 {
 
 .btn-block {
   width: 100%;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 150px;
 }
 
 .btn:hover {
@@ -278,6 +284,11 @@ h3 {
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
 }
+
+label {
+  color: var(--Outline)
+}
+
 
 @keyframes spin {
   0% {
