@@ -38,10 +38,10 @@ function Dashboard() {
     }
     return (
         <>
+            <p>Logged in as {user && user.name}</p>
             <section className='heading'>
-                <h2>Welcome {user && user.name}</h2>
+                <h2>Create a hunt!</h2>
             </section>
-
             <SaveHunt />
 
             <section className='content'>
@@ -52,7 +52,7 @@ function Dashboard() {
                         ))}
                     </div>
                 ) : (
-                    <h3>You have no saved Hunts</h3>
+                    <p>items will appear here</p>
                 )}
             </section>
 

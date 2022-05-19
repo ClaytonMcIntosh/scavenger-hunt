@@ -21,9 +21,10 @@ function Footer() {
                 </li>
                 {user ? (
                     <li>
-                        <button className='btn' onClick={onLogout}>
-                            <FaSignOutAlt /> Logout
-                        </button>
+                        
+                        <div onClick={onLogout}>
+                            <p className='purple'><FaSignOutAlt /> Logout</p>
+                        </div>
                     </li>
                 ) : (
                     <>

@@ -25,6 +25,7 @@ a {
 
 p {
   line-height: 1.7;
+  color: var(--Inline)
 }
 
 ul {
@@ -119,7 +120,7 @@ h3 {
 }
 
 .footer {
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 .footer-coninter {
@@ -127,7 +128,9 @@ h3 {
   flex-wrap: wrap;
 }
 
-
+.purple {
+  color: var(--Outline)
+}
 
 .goals {
   display: grid;

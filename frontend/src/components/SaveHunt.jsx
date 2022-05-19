@@ -18,7 +18,7 @@ function SaveHunt() {
         <section className='form'>
             <form onSubmit={onSubmit}>
                 <div className='form-group'>
-                    <label htmlFor='text'>Test:</label>
+                    <label htmlFor='text'>Add Hunt Items:</label>
                     <input
                         type='text'
                         name='text'
@@ -29,7 +29,7 @@ function SaveHunt() {
                 </div>
                 <div className='form-group'>
                     <button className='btn btn-block-short' type='submit'>
-                        Add Data
+                        add item
                     </button>
                 </div>
             </form>
