@@ -11,21 +11,25 @@ const Card = ({ img, heading, found, icon }) => {
 
     return (
         <div className='square' onClick={foundItem}>
-            <div className='icon-box'>
-                <div className='icon'>{icon}</div>
-            </div>
-            <div className='heading-box'>
-            <h3>{heading} </h3>
-            </div>
             <div className='found-box'>
-                <span> {existence} </span>
+
                 {existence === false ? (
                     <div >
-                        Lost
+                        <div className='icon-box'>
+                            <div className='icon'>{icon}</div>
+                        </div>
+                        <div className='heading-box'>
+                            <h3>{heading} </h3>
+                        </div>
                     </div>
                 ) : (
                     <div >
-                        Found
+                        <div className='icon-box-found'>
+                            <div className='icon-found'>{icon}</div>
+                        </div>
+                        <div className='heading-box-found'>
+                            <h3>{heading} </h3>
+                        </div>
                     </div>
                 )
                 }

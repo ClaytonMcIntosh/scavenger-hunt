@@ -85,6 +85,7 @@ h3 {
   color: #777;
 }
 
+
 .header ul li a svg {
   margin-right: 5px;
 }
@@ -123,8 +124,19 @@ h3 {
 
 }
 
+.icon-box-found {
+  border: var(--Inline) solid 5px;
+  border-radius: 20px;
+  background-color: var(--Inline);
+}
+
 .heading-box {
   height: 20%;
+}
+
+.heading-box-found h3 {
+  color: var(--Inline);
+  text-decoration: line-through solid 4px;
 }
 
 .fawesome {
@@ -132,12 +144,18 @@ h3 {
   padding: 20%;
   top: 50%;
   left: 50%;
-  color: var(--Inline)
 }
 
 .icon {
   height: 100%;
-  color: var(--Outline)
+  color: var(--Outline);
+
+}
+
+
+.icon-found {
+  height: 100%;
+  color: var(--Backline);
 }
 
 .goal {
