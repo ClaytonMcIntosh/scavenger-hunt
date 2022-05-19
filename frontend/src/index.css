@@ -115,9 +115,31 @@ h3 {
 }
 
 .square {
-  background-color: aqua;
   margin: 1%;
   width: 30%;
+}
+
+.icon-box {
+  border: var(--Outline) solid 5px;
+  border-radius: 20px;
+
+}
+
+.heading-box {
+  height: 20%;
+}
+
+.fawesome {
+  font-size: 3em;
+  padding: 20%;
+  top: 50%;
+  left: 50%;
+  color: var(--Outline)
+}
+
+.icon {
+  height: 100%;
+  color: var(--Outline)
 }
 
 .found-box {

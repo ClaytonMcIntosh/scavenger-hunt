@@ -1,5 +1,6 @@
 import Card from './Card'
 
+
 const HuntBox = (props) => {
     return (
         <>
@@ -7,7 +8,7 @@ const HuntBox = (props) => {
             <div className="square-container">
                 {props.data.map((element) => {
                     return (
-                        <Card key={element.id} img={element.img} heading={element.heading} found={element.found} />
+                        <Card key={element.id} img={element.img} heading={element.heading} found={element.found} icon={element.icon} />
                     );
                 })
                 }

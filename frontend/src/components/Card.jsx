@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-const Card = ({ img, heading, found }) => {
+
+const Card = ({ img, heading, found, icon }) => {
 
     const [existence, setExistence] = useState(false)
 
@@ -10,8 +11,12 @@ const Card = ({ img, heading, found }) => {
 
     return (
         <div className='square'>
-            <img className="card-image" src={img} alt="" width="20%" />
+            <div className='icon-box'>
+                <div className='icon'>{icon}</div>
+            </div>
+            <div className='heading-box'>
             <h3>{heading} </h3>
+            </div>
             <div className='found-box'>
                 <span> {existence} </span>
                 {existence === false ? (
@@ -24,16 +29,16 @@ const Card = ({ img, heading, found }) => {
                     </div>
                 )
                 }
+
                 <button onClick={foundItem}> Found </button>
             </div>
-
-
-
         </div >
+
     )
 }
 
 export default Card
 export { }
+
 
 

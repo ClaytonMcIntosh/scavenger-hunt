@@ -1,7 +1,7 @@
 import HuntBox from "../components/HuntBox";
 import data from "../components/data";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEraser, faKey, faDiceSix, faThumbTack, faPumpSoap, faChessKnight, faScrewdriver, faBell, faPuzzlePiece } from '@fortawesome/free-solid-svg-icons'
+
+
 
 const Main = () => {
 
@@ -23,18 +23,6 @@ const Main = () => {
 
                 )
             })}
-            <h1>
-                <FontAwesomeIcon icon={faEraser} />
-                <FontAwesomeIcon icon={faKey} />
-                <FontAwesomeIcon icon={faDiceSix} />
-                <FontAwesomeIcon icon={faThumbTack} />
-                <FontAwesomeIcon icon={faPumpSoap} />
-                <FontAwesomeIcon icon={faChessKnight} />
-                <FontAwesomeIcon icon={faScrewdriver} />
-                <FontAwesomeIcon icon={faBell} />
-                <FontAwesomeIcon icon={faPuzzlePiece} />
-
-            </h1>
         </div>
     )
 }
