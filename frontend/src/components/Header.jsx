@@ -18,10 +18,9 @@ function Header() {
 
     return (
         <header className='header'>
-            <div className='logo'>
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
-                <Link to='/'> Scavenger Hunt</Link>
-            </div>
+
+            <Link to='/'>  <h1 className='header-logo'><FontAwesomeIcon icon={faMagnifyingGlass} /> Scavenger Hunt</h1></Link>
+
 
         </header>
     )
