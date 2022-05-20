@@ -21,7 +21,7 @@ function Footer() {
                 </li>
                 {user ? (
                     <li>
-                        
+
                         <div onClick={onLogout}>
                             <p className='purple'><FaSignOutAlt /> Logout</p>
                         </div>

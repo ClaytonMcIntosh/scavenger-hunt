@@ -65,9 +65,14 @@ h3 {
   text-align: center;
   border: var(--Outline) solid 5px;
   border-radius: 20px;
-  margin: 5%;
+  margin: auto;
   margin-bottom: 100px;
 }
+
+.top {
+  margin: 10px 0px;
+}
+
 
 .header {
   display: flex;
@@ -167,7 +172,12 @@ h3 {
   margin: 4%;
 }
 
+.icon-box-saved {
+  border: var(--Outline) solid 5px;
+}
+
 .icon-box-saved-b {
+  border: var(--Inline) solid 5px;
   background-color: var(--Inline);
 }
 

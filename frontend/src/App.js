@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       <Router>
+      <div className='top'>
         <div className='container'>
           <Header />
           <Routes>
@@ -21,6 +22,7 @@ function App() {
             <Route path='/register' element={<Register />} />
           </Routes>
           <Footer />
+        </div>
         </div>
       </Router>
       <ToastContainer />
