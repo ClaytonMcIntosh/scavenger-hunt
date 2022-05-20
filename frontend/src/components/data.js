@@ -4,7 +4,6 @@ import { faEraser, faKey, faDiceSix, faThumbTack, faPumpSoap, faChessKnight, faS
 const data = [
     {
         id: 1,
-        img: require("../assets/img/household/clock.jpg"),
         heading: 'eraser',
         icon: <FontAwesomeIcon className='fawesome' icon={faEraser} />,
         headerName: 'Household Items',
@@ -12,7 +11,6 @@ const data = [
     },
     {
         id: 2,
-        img: require("../assets/img/household/clippers.jpg"),
         heading: 'dice',
         icon: <FontAwesomeIcon className='fawesome' icon={faDiceSix} />,
         headerName: 'Household Items',
@@ -20,7 +18,6 @@ const data = [
     },
     {
         id: 3,
-        img: require("../assets/img/household/key.jpg"),
         heading: 'key',
         icon: <FontAwesomeIcon className='fawesome' icon={faKey} />,
         headerName: 'Household Items',
@@ -28,7 +25,6 @@ const data = [
     },
     {
         id: 4,
-        img: require("../assets/img/household/leaf.jpg"),
         heading: 'knight',
         icon: <FontAwesomeIcon className='fawesome' icon={faChessKnight} />,
         headerName: 'Household Items',
@@ -36,7 +32,6 @@ const data = [
     },
     {
         id: 5,
-        img: require("../assets/img/household/lego.jpg"),
         heading: 'thumb tack',
         icon: <FontAwesomeIcon className='fawesome' icon={faThumbTack} />,
         headerName: 'Household Items',
@@ -44,7 +39,6 @@ const data = [
     },
     {
         id: 6,
-        img: require("../assets/img/household/peg.jpg"),
         heading: 'screw driver',
         icon: <FontAwesomeIcon className='fawesome' icon={faScrewdriver} />,
         headerName: 'Household Items',
@@ -52,7 +46,6 @@ const data = [
     },
     {
         id: 7,
-        img: require("../assets/img/household/sanitizer.jpg"),
         heading: 'sanitizer',
         icon: <FontAwesomeIcon className='fawesome' icon={faPumpSoap} />,
         headerName: 'Household Items',
@@ -60,7 +53,6 @@ const data = [
     },
     {
         id: 8,
-        img: require("../assets/img/household/spoon.jpg"),
         heading: 'bell',
         icon: <FontAwesomeIcon className='fawesome' icon={faBell} />,
         headerName: 'Household Items',
@@ -68,7 +60,6 @@ const data = [
     },
     {
         id: 9,
-        img: require("../assets/img/household/stapler.jpg"),
         heading: 'puzzle piece',
         icon: <FontAwesomeIcon className='fawesome' icon={faPuzzlePiece} />,
         headerName: 'Household Items',
