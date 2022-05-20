@@ -155,6 +155,15 @@ h3 {
 
 }
 
+.icon-box-saved {
+  border: var(--Outline) solid 5px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 4%;
+}
+
+
+
 .icon-box-found {
   border: var(--Inline) solid 5px;
   border-radius: 20px;
@@ -181,6 +190,13 @@ h3 {
   height: 100%;
   color: var(--Outline);
 
+}
+
+.icon-saved {
+  height: 100%;
+  color: var(--Outline);
+  padding: 10px;
+  font-size: x-large;
 }
 
 
@@ -222,7 +238,7 @@ h3 {
   padding: 10px;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   font-family: inherit;
 }
 
@@ -247,6 +263,21 @@ h3 {
   justify-content: center;
 }
 
+.btn-save {
+  padding: 3px 8px;
+  border-radius: 5px;
+  background: var(--Outline);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn svg {
   margin-right: 8px;
 }
@@ -258,7 +289,7 @@ h3 {
 
 .btn-block-short {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .btn-block {

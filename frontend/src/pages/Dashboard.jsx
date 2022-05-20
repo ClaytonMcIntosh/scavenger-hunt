@@ -39,14 +39,14 @@ function Dashboard() {
     return (
         <>
             <p>Logged in as {user && user.name}</p>
-            <section className='heading'>
+            <section>
                 <h2>Create a hunt!</h2>
             </section>
             <SaveHunt />
 
-            <section className='content'>
+            <section >
                 {hunts.length > 0 ? (
-                    <div className='goals'>
+                    <div >
                         {hunts.map((hunt) => (
                             <HuntItem key={hunt._id} hunt={hunt} />
                         ))}
