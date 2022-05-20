@@ -29,6 +29,11 @@ if (process.env.NODE_ENV === 'production') {
     app.get('/', (req, res) => res.send('Please set to production'))
 }
 
+var distDir = __dirname + "/dist/";
+
+app.use(express.static(distDir));
+
+
 app.use(errorHandler)
 
 app.listen(port, () => console.log(`Server start on port ${port}`))
