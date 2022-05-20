@@ -132,6 +132,10 @@ h3 {
   color: var(--Outline)
 }
 
+.hunt-text {
+  color: white;
+}
+
 .goals {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -155,13 +159,17 @@ h3 {
 
 }
 
-.icon-box-saved {
+.icon-box-saved,
+.icon-box-saved-b {
   border: var(--Outline) solid 5px;
   border-radius: 20px;
   padding: 10px;
   margin: 4%;
 }
 
+.icon-box-saved-b {
+  background-color: var(--Inline);
+}
 
 
 .icon-box-found {
@@ -170,9 +178,7 @@ h3 {
   background-color: var(--Inline);
 }
 
-.heading-box {
-  height: 10%;
-}
+
 
 .heading-box-found h3 {
   color: var(--Inline);
@@ -192,11 +198,16 @@ h3 {
 
 }
 
-.icon-saved {
+.icon-saved,
+.icon-saved-b {
   height: 100%;
   color: var(--Outline);
   padding: 10px;
   font-size: x-large;
+}
+
+.icon-saved-b {
+  color: var(--Backline);
 }
 
 
@@ -227,6 +238,7 @@ h3 {
   margin: 0 auto;
 }
 
+
 .form-group {
   margin-bottom: 10px;
 }
@@ -248,8 +260,8 @@ h3 {
   margin: 0 0 5px 3px;
 }
 
-.btn {
-  padding: 10px 20px;
+.btn,
+.btn-save {
   border-radius: 5px;
   background: var(--Outline);
   color: #fff;
@@ -263,20 +275,14 @@ h3 {
   justify-content: center;
 }
 
+.btn {
+  padding: 10px 20px;
+}
+
 .btn-save {
   padding: 3px 8px;
-  border-radius: 5px;
-  background: var(--Outline);
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  text-align: center;
-  appearance: button;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
+
 
 .btn svg {
   margin-right: 8px;
@@ -326,6 +332,16 @@ h3 {
 
 label {
   color: var(--Outline)
+}
+
+.heading-box {
+  height: 10%;
+}
+
+.heading-box-b {
+  height: 10%;
+  color: var(--Backline);
+  text-decoration: line-through solid 4px;
 }
 
 
