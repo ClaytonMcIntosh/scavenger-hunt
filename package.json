@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Scavenger hunt ",
   "main": "server.js",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.5.0"
+  },
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
@@ -35,8 +39,5 @@
   },
   "devDependencies": {
     "concurrently": "^7.1.0"
-  },
-      "engines": {
-      "node": "16.x"
-    }
   }
+}
