@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7fc68bed.css",
+    "main.js": "/static/js/main.74b75902.js",
+    "static/media/key.jpg": "/static/media/key.4ed05f5786dfbc206b8f.jpg",
+    "static/media/sanitizer.jpg": "/static/media/sanitizer.895d2776d23ed2df9706.jpg",
+    "static/media/clock.jpg": "/static/media/clock.af7236209fa6460ab737.jpg",
+    "static/media/leaf.jpg": "/static/media/leaf.cd8eb54701fff76b3921.jpg",
+    "static/media/stapler.jpg": "/static/media/stapler.fd00dbea4ba93fdce328.jpg",
+    "static/media/lego.jpg": "/static/media/lego.2999e1a7e09962beceb3.jpg",
+    "static/media/clippers.jpg": "/static/media/clippers.7625ced2fce70f116952.jpg",
+    "static/media/peg.jpg": "/static/media/peg.923ecc2197fb70b1a4ef.jpg",
+    "index.html": "/index.html",
+    "main.7fc68bed.css.map": "/static/css/main.7fc68bed.css.map",
+    "main.74b75902.js.map": "/static/js/main.74b75902.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fc68bed.css",
+    "static/js/main.74b75902.js"
+  ]
+}
