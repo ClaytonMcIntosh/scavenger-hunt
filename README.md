@@ -32,40 +32,83 @@ WHEN I return to the site,
 THEN I can access my own stored items.
 ```
 
-## User Story
+## Final application:
 
+[Scavenger Hung on Heroku - Click to view](https://scavengerhunt2022.herokuapp.com/)
 
+![ScreenShot](./frontend/public/img/screenshot1.png)
 
 ## Project requirements
 
+``` Use React for the front end. ```
 
- ```Use React for the front end.```
+The app uses React for the front end, including passing of props, use of components, and use of hooks including useState and the Redux toolkit. 
 
+``` Use GraphQL with a Node.js and Express.js server. ```
 
- ```Use GraphQL with a Node.js and Express.js server. ```
+The project uses Node.js and Express.js. I have worked with GraphQL and love it. Unfortunatly, I was unable to get GraphQL working in this website and so used a restful APIs. 
 
+``` Use MongoDB and the Mongoose ODM for the database. ```
 
- ```Use MongoDB and the Mongoose ODM for the database. ```
+I used MongoDB for my databases, with MongoDB Atlas for storage. I particularly loved MongoDB Atlas when it came to deploying as everything was pretty much already set up! I also used MongoDB Compass to view my data.
 
-
- ```Use queries and mutations for retrieving, adding, updating, and deleting data. ```
-
-
- ```Be deployed using Heroku (with data). ```
-
-
- ```Have a polished UI. ```
+![ScreenShot](./frontend/public/img/screenshot2.png)
 
 
- ```Be responsive. ```
+``` Use queries and mutations for retrieving, adding, updating, and deleting data. ```
+
+The app is set up with full CRUD routing in the backend. Setting this up and accessing this with Insomnia wasn't a big challenge, however connecting this to the frontend with React was a bit of a headache. 
+
+``` Be deployed using Heroku (with data). ```
+
+[Scavenger Hung on Heroku - Click to view](https://scavengerhunt2022.herokuapp.com/)
+
+``` Have a polished UI. ```
+``` Be responsive. ```
+
+The app has a minimalistic mobile first design. It is responsive and scales to any mobile or computer screen. 
+
+![ScreenShot](./frontend/public/img/screenshot3.png)
+
+``` Be interactive (i.e., accept and respond to user input). ```
+
+The app has multipul interactive features, including creating a user with form data, signing in, buttons that resond and change the state of the view, and storage, manipulation and retreval of data when logged in.
+
+```Include authentication (JWT). ```
+
+The app has full JWT authentication using the JSON Web Token and BCrypt.js packages. I knew this would be the most difficult part of the project so I focused on it as my first priority.
+
+```Protect sensitive API key information on the server.```
+
+Sensitive API key infomation was stored in .env files using the DotENV package, and then also on MongoDB Atlas when deployed.
+
+## Development
+
+![ScreenShot](./frontend/public/img/screenshot4.png)
+
+### Technologies Used
 
 
- ```Be interactive (i.e., accept and respond to user input). ```
+Frontend:
 
 
- ```Include authentication (JWT). ```
+
+Server:
+
+- [Node.js](https://nodejs.org/en/)
+- [Insomnia](https://insomnia.rest/)
+- [Express](http://expressjs.com/)
+
+Database:
+
+Security:
+- [Bcrypt](https://www.npmjs.com/package/bcrypt)
 
 
- ```Protect sensitive API key information on the server. ```
 
 
+
+
+### Challenges
+
+### Future Development
