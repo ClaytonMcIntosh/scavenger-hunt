@@ -14,8 +14,8 @@ Scavenger Hunt helps you create and record real world search-and-find games to p
 As A supervisor,
 I WANT a fun way to captivate and entertain in a real-world environment,
 SO THAT everyone is excited and engaged.
-
 ```
+
 ## User Story
 
 ```
